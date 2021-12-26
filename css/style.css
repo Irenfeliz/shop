@@ -334,3 +334,7 @@ body {
 .footer__social-networks-list {
     display: flex;
 }
+
+.footer__social-networks-item {
+    margin-left: 7px;
+}
