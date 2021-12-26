@@ -120,19 +120,19 @@ body {
     flex-direction: column;
 }
 
-.sales__item--woman {
+.sales__item_woman {
     background-image: url(../img/item-woman.jpg);
 }
 
-.sales__item--man {
+.sales__item_man {
     background-image: url(../img/item-man.jpg);
 }
 
-.sales__item--kids {
+.sales__item_kids {
     background-image: url(../img/item-kids.jpg);
 }
 
-.sales__item--accesories {
+.sales__item_accesories {
     background-image: url(../img/item-accesories.jpg);
     width: 100%;
     margin: 30px 0 0;
@@ -259,7 +259,7 @@ body {
 
 .footer__subscribe {
     background: rgba(244, 244, 244, 0.7);
-    background-image: url(/img/footer-bkg.jpg);
+    background-image: url(../img/footer-bkg.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     height: 448px;
@@ -318,12 +318,13 @@ body {
     height: 79px;
 }
 
-.footer__bottom-wrp{
+.footer__bottom-wrp {
     display: flex;
     justify-content: space-between;
     height: 100%;
     align-items: center;
 }
+
 .footer__rights {
     font-size: 16px;
     line-height: 19px;
