@@ -1,0 +1,157 @@
+.registration-page {
+    display: flex;
+    height: 148px;
+    align-items: center;
+    background: #F8F3F4;
+}
+
+.registration-page__title {
+    text-transform: uppercase;
+    color: $pink-text;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration {
+    display: flex;
+    justify-content: space-between;
+    margin: 64px auto 96px;
+}
+
+.registration__form {
+    max-width: 360px;
+}
+
+.registration__form-input {
+    width: 337px;
+    height: 45px;
+    padding: 0 0 0 17px;
+    border: 1px solid #A4A4A4;
+    margin: 21px 0 0px;
+}
+
+.registration__form-input::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    color: #B1B1B1;
+}
+
+.registration__form-input:hover,
+.registration__form-input:focus {
+    outline: 1px solid #949292;
+}
+
+
+.registration__form-legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+}
+
+.registration__form-fieldset {
+    margin: 31px 0 33px;
+    display: flex;
+    align-items: center;
+}
+
+.registration__form-fieldset input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    outline: none;
+    margin: 0;
+}
+
+.registration__form-fieldset input[type="radio"]:checked {
+    background-color: $pink-text;
+    border: none;
+}
+
+.registration__form-fieldset label {
+    margin: 0 20px 0 10px;
+}
+
+.registration__form-text {
+    font-weight: 300;
+    font-size: 13px;
+    color: #B1B1B1;
+    margin: 15px 0 39px;
+}
+
+.registration__form-button {
+    background-color: $pink-text;
+    border: none;
+    color: $total-white;
+    text-transform: uppercase;
+    padding: 16px 66px 16px 29px;
+    position: relative;
+    font-weight: normal;
+    line-height: 17px;
+}
+
+.registration__form-button:hover,
+.registration__form-button:focus,
+.registration__form-button:active {
+    background: #E05C6E;
+    outline: none;
+}
+
+.registration__form-button::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 121px;
+    bottom: auto;
+    right: auto;
+    transform: translateY(-50%);
+    background: url(../img/arrow.svg) no-repeat;
+    width: 17px;
+    height: 10px;
+}
+
+.registration__loyality {
+    max-width: 652px;
+}
+
+.registration__loyality-title {
+    text-transform: uppercase;
+    color: $total-black;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration__loyality-text {
+    margin: 22px 0 21px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.registration__loyality-list {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 42px;
+}
+
+.registration__loyality-item {
+    position: relative;
+    margin: 0 0 16px;
+}
+
+.registration__loyality-item::before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/mark.svg);
+    width: 20px;
+    height: 16px;
+    left: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+}
