@@ -71,8 +71,9 @@
           </svg></a>
       </div>
     </div>
+    <div id="header-shadow" class="header__shadow"> </div>
     <nav id="menu" class="header__nav">
-      <div id="wrp" class="header__nav-wrp">
+      <div class="header__nav-wrp">
         <button class="header__nav-cross" type="button">
           <svg class="header__nav-cross-icon" width="13" height="13" viewBox="0 0 13 13"
             xmlns="http://www.w3.org/2000/svg">
@@ -118,6 +119,7 @@
           </li>
         </ul>
       </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -130,7 +132,7 @@
             <span class="brand__subtitle_pink">fashion</span></span>
         </h1>
       </div>
-      </div>
+
     </section>
     <section class="sales container">
       <h2 class="visually-hidden">sales</h2>
@@ -411,20 +413,6 @@
   </footer>
 
   <script src="./JS/script.js"></script>
-
-  
-  <script>
-    let button = document.getElementById('burger');
-
-    let navigation = document.getElementById('menu');
-
-    let wrp = document.getElementById('wrp');
-    
-    button.addEventListener('click', function () {
-      navigation.classList.toggle('display-block');
-      wrp.classList.toggle('display-block');
-    });
-  </script>
 
 </body>
 

@@ -116,6 +116,21 @@
 .header__nav {
     position: absolute;
     right: 0;
+    display: none;
+    z-index: 2;
+}
+
+.header__shadow {
+    width: 100%;
+    height: 764px;
+    background-color: #3a3838db;
+    position: absolute;
+    display: none;
+    z-index: 1;
+}
+
+.header__nav-display-block {
+    display: block;
 }
 
 .header__nav-wrp {
@@ -145,12 +160,4 @@
     line-height: 17px;
     color: $total-black;
     margin: 0 0 24px 33px;
-}
-
-.header__nav-wrp {
-    display: none;
-}
-
-.header__nav-wrp:hover {
-    display: block;
 }
