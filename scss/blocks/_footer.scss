@@ -100,6 +100,11 @@
     outline: none;
 }
 
+.footer__subscribe-button:active {
+    background: $hover;
+    outline: none;
+}
+
 .footer__bottom {
     background-color: $black-bkg;
     height: 79px;

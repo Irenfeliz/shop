@@ -35,5 +35,16 @@
         background: $pink-text;
         border: none;
         padding: 15px 40px;
+
+        &:hover,
+        &:focus {
+            background: #E05C6E;
+            outline: none;
+        }
+
+        &:active {
+            background: $hover;
+            outline: none;
+        }
     }
 }

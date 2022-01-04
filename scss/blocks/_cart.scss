@@ -34,7 +34,21 @@
             border: none;
             background: transparent;
 
+            &:hover .cart__item-cross,
+            &:focus .cart__item-cross {
+                color: $active;
+            }
+            &:active .cart__item-cross {
+                color: $active-light;
+            }
+            &:focus {
+                outline: none;
+            }
+            
+
+
         }
+        
         &-cross {
             color: #575757;
             height: 18px;
@@ -78,11 +92,10 @@
             margin: 0 0 0 24px;
 
             &:focus {
-                outline: 2px solid #575757;
+                outline: 2px solid $active;
             }
         }
     }
-
 
     &__button {
         text-transform: uppercase;
@@ -95,5 +108,23 @@
             display: flex;
             justify-content: space-between;
         }
+
+        &:hover,
+        &:focus {
+            background-color: $active;
+            color: $total-white;
+            border: $active-light;
+            border: 1px solid $active-light;
+            outline: none;
+        }
+        &:active {
+            background-color: $active-light;
+            border: 1px solid $active;
+            color: $active;
+            outline: none;
+        }
     }
 }
+
+
+

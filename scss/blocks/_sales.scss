@@ -13,6 +13,10 @@
     flex-direction: column;
 }
 
+.sales__item-link {
+    text-decoration: none;
+}
+
 .sales__item_woman {
     background-image: url(../img/item-woman.jpg);
 }
@@ -30,6 +34,10 @@
     width: 100%;
     margin: 30px 0 0;
     height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .sales__item-text {
@@ -46,4 +54,19 @@
     font-weight: 700;
     line-height: 29px;
     color: $pink-text;
+}
+
+.sales__item-link:hover .sales__item-title,
+.sales__item-link:focus .sales__item-title {
+    color: #a0515b;
+}
+
+.sales__item-link:hover .sales__item-text,
+.sales__item-link:focus .sales__item-text {
+    color: $active-light;
+}
+
+.sales__item-link:active .sales__item-title,
+.sales__item-link:active .sales__item-text {
+    color: $active;
 }

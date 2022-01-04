@@ -56,6 +56,12 @@
     border: none;
 }
 
+.registration__form-fieldset input[type="radio"]:hover,
+.registration__form-fieldset input[type="radio"]:focus {
+    background-color: $pink-color;
+    border: none;
+}
+
 .registration__form-fieldset label {
     margin: 0 20px 0 10px;
 }
@@ -79,9 +85,13 @@
 }
 
 .registration__form-button:hover,
-.registration__form-button:focus,
-.registration__form-button:active {
+.registration__form-button:focus {
     background: #E05C6E;
+    outline: none;
+}
+
+.registration__form-button:active {
+    background: $hover;
     outline: none;
 }
 

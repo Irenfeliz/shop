@@ -50,7 +50,7 @@
 }
 
 .header__search-input {
-    background: #E1E1E1;
+    background: $total-white;
     border: none;
     height: 44px;
     width: 350px;
@@ -65,15 +65,23 @@
     background: transparent;
     border: none;
     right: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.header__search-button:hover .header__menu-icon_search {
+    color: $hover;
+}
+
+.header__search-button:active .header__menu-icon_search {
+    color: $active;
 }
 
 .header__search-form {
     display: none;
 }
 
-.header__search:hover .header__search-form,
-.header__search:active .header__search-form,
-.header__search:focus .header__search-form {
+.header__search:hover .header__search-form {
     display: flex;
     outline: none;
 }
@@ -84,9 +92,8 @@
     display: none;
 }
 
-.header__search-input:hover,
-.header__search-input:focus {
-    outline: none;
+.header__search-input:hover {
+    outline: 2px solid #949292;
 }
 
 .header__link:active,
@@ -101,16 +108,17 @@
     outline: none;
 }
 
-.header__link:active .header__menu-icon,
+
 .header__link:focus .header__menu-icon,
 .header__link:hover .header__menu-icon,
-.header__menu-btn:active .header__menu-icon,
 .header__menu-btn:focus .header__menu-icon,
-.header__menu-btn:hover .header__menu-icon,
-.header__search:active .header__menu-icon,
-.header__search:focus .header__menu-icon,
-.header__search:hover .header__menu-icon {
-    color: $pink-text;
+.header__menu-btn:hover .header__menu-icon {
+    color: $hover;
+}
+
+.header__link:active .header__menu-icon,
+.header__menu-btn:active .header__menu-icon {
+    color: $active;
 }
 
 .header__nav {
@@ -152,6 +160,14 @@
 
 .header__nav-cross-icon {
     color: #6F6E6E;
+}
+
+.header__nav-cross:hover .header__nav-cross-icon {
+    fill: $active;
+}
+
+.header__nav-cross:active .header__nav-cross-icon {
+    fill: $active-light;
 }
 
 .header__nav-title {
