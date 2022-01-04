@@ -20,10 +20,26 @@
     }
 
     &__item {
+        position: relative;
         display: flex;
         width: 652px;
         margin: 0 0 40px;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+
+        &-icon {
+            position: absolute;
+            top: 28px;
+            right: 22px;
+            padding: 0;
+            border: none;
+            background: transparent;
+
+        }
+        &-cross {
+            color: #575757;
+            height: 18px;
+            width: 18px;
+        }
 
         &-info {
             padding: 22px 0 0 31px;

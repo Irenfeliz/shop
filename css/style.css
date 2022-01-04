@@ -1097,6 +1097,7 @@ table {
 }
 
 .cart__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1104,6 +1105,21 @@ table {
   margin: 0 0 40px;
   -webkit-filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
           filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.cart__item-icon {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.cart__item-cross {
+  color: #575757;
+  height: 18px;
+  width: 18px;
 }
 
 .cart__item-info {
