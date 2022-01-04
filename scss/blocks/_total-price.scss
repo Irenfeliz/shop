@@ -1,0 +1,39 @@
+.total-price {
+    background: #F5F3F3;
+    text-transform: uppercase;
+    padding: 40px;
+    text-align: right;
+
+    &__text {
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        margin: 0 0 12px;
+    }
+
+    &__result {
+        font-size: 16px;
+        line-height: 19px;
+        color: $total-black;
+
+        &_pink {
+            color: $pink-text;
+        }
+    }
+
+    &__hr {
+        border: 1px solid #E2E2E2;
+        margin: 21px 0 17px;
+    }
+
+    &__button {
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: $total-white;
+        background: $pink-text;
+        border: none;
+        padding: 15px 40px;
+    }
+}

@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Main</title>
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet" />
-    <script src="./JS/script.js"></script>
 </head>
 
 <body>
@@ -126,7 +124,82 @@
             </div>
         </nav>
     </header>
-    <main></main>
+    <main class="">
+        <section class="cart__page">
+            <h1 class="cart__page-title container">shopping cart</h1>
+        </section>
+        <div class="cart-wrp container">
+            <section class="cart">
+                <h2 class="cart__title visually-hidden">products in&nbsp;the cart</h2>
+                <ul class="cart__list">
+                    <li class="cart__item">
+                        <img class="cart__item-img" src="./img/product-cart-1.jpg" alt="product" height="306"
+                            width="262">
+                        <div class="cart__item-info">
+                            <h3 class="cart__item-title">
+                                mango people t-shirt
+                            </h3>
+                            <ul class="cart__item-details">
+                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
+                                <li>Color: Red</li>
+                                <li>Size: Xl</li>
+                                <li>Quantity:
+                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
+                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cart__item">
+                        <img class="cart__item-img" src="./img/product-cart-2.jpg" alt="product" height="306"
+                            width="262">
+                        <div class="cart__item-info">
+                            <h3 class="cart__item-title">
+                                mango people t-shirt
+                            </h3>
+                            <ul class="cart__item-details">
+                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
+                                <li>Color: Red</li>
+                                <li>Size: Xl</li>
+                                <li>Quantity:
+                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
+                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cart__button-wrp">
+                    <button class="cart__button" type="reset">clear shopping cart</button>
+                    <button class="cart__button" type="submit">continue shopping</button>
+                </div>
+            </section>
+            <div class="shipping-wrp">
+                <section class="shipping">
+                    <h2 class="visually-hidden">shipping adress</h2>
+                    <form class="shipping__form" action="#">
+                        <fieldset class="shipping__form-fieldset">
+                            <legend class="shipping__form-legend">shipping adress</legend>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="Bangladesh">
+                            <label class="visually-hidden" for="city">city</label>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="State">
+                            <label class="visually-hidden" for="state">State</label>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="Postcode / Zip">
+                            <label class="visually-hidden" for="Postcode">Postcode</label>
+                        </fieldset>
+                        <button class="shipping__form-button" type="submit">get a&nbsp;quote</button>
+                    </form>
+                </section>
+                <section class="total-price">
+                    <h2 class="visually-hidden">total price</h2>
+                    <p class="total-price__text">sub total $900</p>
+                    <h3 class="total-price__result">grand total <span class="total-price__result_pink">$900</span></h3>
+                    <hr class="total-price__hr">
+                    <button class="total-price__button" type="submit">proceed to&nbsp;checkout</button>
+                </section>
+            </div>
+        </div>
+    </main>
     <footer class="footer">
         <div class="footer__subscribe">
             <div class="footer__subscribe-wrp container">
@@ -228,6 +301,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="./JS/script.js"></script>
+
 </body>
 
 </html>

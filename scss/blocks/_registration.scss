@@ -1,15 +1,9 @@
-.registration-page {
-    display: flex;
-    height: 148px;
-    align-items: center;
-    background: #F8F3F4;
-}
+.registration__page {
+    @include page;
 
-.registration-page__title {
-    text-transform: uppercase;
-    color: $pink-text;
-    font-size: 24px;
-    line-height: 29px;
+    &-title {
+        @include page-title
+    }
 }
 
 .registration {
@@ -20,33 +14,23 @@
 
 .registration__form {
     max-width: 360px;
+
+    &-legend {
+        @include form-legend;
+    }
 }
 
 .registration__form-input {
-    width: 337px;
-    height: 45px;
-    padding: 0 0 0 17px;
-    border: 1px solid #A4A4A4;
-    margin: 21px 0 0px;
-}
+    @include form-input;
 
-.registration__form-input::placeholder {
-    font-weight: 300;
-    font-size: 13px;
-    color: #B1B1B1;
-}
+    &::placeholder {
+        @include form-input-placeholder;
+    }
 
-.registration__form-input:hover,
-.registration__form-input:focus {
-    outline: 1px solid #949292;
-}
-
-
-.registration__form-legend {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: $black;
+    &:hover,
+    &:focus {
+        @include form-input-hover-focus;
+    }
 }
 
 .registration__form-fieldset {

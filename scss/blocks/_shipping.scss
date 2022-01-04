@@ -1,0 +1,50 @@
+.shipping {
+    margin: 0 0 58px;
+
+    &-wrp {
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {}
+
+    &__form {
+        &-input {
+            @include form-input;
+
+            &::placeholder {
+                @include form-input-placeholder;
+            }
+
+            &:hover,
+            &:focus {
+                @include form-input-hover-focus;
+            }
+        }
+
+        &-fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-legend {
+            @include form-legend;
+            text-transform: uppercase;
+        }
+
+        &-button {
+            text-transform: uppercase;
+            padding: 10px 15px;
+            margin: 24px 0 0 0;
+            border: 1px solid #A4A4A4;
+            background-color: $total-white;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #4A4A4A;
+            justify-content: left;
+
+        }
+    }
+}

@@ -1,5 +1,7 @@
 @import './variables.scss';
+@import './mixins';
 @import './general';
+@import './reset';
 @import './blocks/header';
 @import './blocks/nav-item';
 @import './blocks/registration';
@@ -8,3 +10,6 @@
 @import './blocks/products';
 @import './blocks/benefits';
 @import './blocks/footer';
+@import './blocks/cart';
+@import './blocks/shipping';
+@import './blocks/total-price';
