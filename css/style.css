@@ -45,13 +45,10 @@ button:hover {
     cursor: pointer;
 }
 
-.header__nav {
-    display: none;
-}
-
 .header {
     background-color: var(--black);
     min-height: 75px;
+    position: relative;
 }
 
 .header__wrp {
@@ -743,4 +740,72 @@ button:hover {
     left: -42px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/*menu*/
+
+.header__nav {
+    position: absolute;
+    right: 0;
+}
+
+.header__nav-wrp {
+    width: 232px;
+    min-height: 764px;
+    background: #FFFFFF;
+    position: relative;
+    padding: 37px 0 0 0;
+}
+
+.header__nav-cross {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.header__nav-cross-icon {
+    color: #6F6E6E;
+}
+
+.header__nav-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 17px;
+    color: var(--total-black);
+    margin: 0 0 24px 33px;
+}
+
+.nav-item__title {
+    text-decoration: none;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--pink-text);
+    margin: 0 33px;
+}
+
+.nav-item__list {
+    margin: 12px 0 9px 55px;
+}
+
+.nav-item__link {
+    line-height: 17px;
+    color: #6F6E6E;
+    margin: 0 0 11px 0;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header__nav-wrp {
+    display: none;
+}
+
+.header__nav-wrp:hover {
+    display: block;
+}
+
+.display-block {
+    display: block;
 }
