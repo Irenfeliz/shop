@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -126,68 +126,97 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="registration__page">
-            <h1 class="registration__page-title container">registration</h1>
+    <main class="">
+        <section class="cart__page">
+            <h1 class="cart__page-title container">shopping cart</h1>
         </section>
-        <section class="registration container">
-            <div class="registration__form">
-                <h2 class="registration__form-title visually-hidden">registration form</h2>
-                <form class="registration__form-inputs" action="#">
-                    <fieldset>
-                        <legend class="registration__form-legend">Your Name</legend>
-
-                        <input class="registration__form-input" type="text" id="first-name" name="fname"
-                            placeholder="First Name" />
-                        <label class="visually-hidden" for="first-name">First Name</label>
-
-                        <input class="registration__form-input" type="text" id="last-name" name="lname"
-                            placeholder="Last Name" />
-                        <label class="visually-hidden" for="last-name">Last Name</label>
-                    </fieldset>
-                    <fieldset class="registration__form-fieldset">
-                        <legend class="visually-hidden">Gender</legend>
-
-                        <input type="radio" id="male" name="gender" value="male" checked />
-                        <label for="male">Male</label>
-
-                        <input type="radio" id="female" name="gender" value="female" />
-                        <label for="female">Female</label>
-
-                        <input type="radio" id="other" name="gender" value="other" />
-                        <label for="other">Other</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="registration__form-legend">Login details</legend>
-                        <input class="registration__form-input" id="email" type="email" name="email"
-                            placeholder="Email" />
-                        <label class="visually-hidden" for="email">Email</label>
-                        <input class="registration__form-input" id="password" type="password" name="password"
-                            placeholder="Password" />
-                        <label class="visually-hidden" for="password">Password</label>
-                    </fieldset>
-                    <p class="registration__form-text">
-                        Please use 8 or more characters, with at least 1 number and a
-                        mixture of uppercase and lowercase letters
-                    </p>
-                    <button class="registration__form-button" type="submit">join now</button>
-                </form>
-            </div>
-            <div class="registration__loyality">
-                <h3 class="registration__loyality-title">loyalty has its perks</h3>
-                <p class="registration__loyality-text">
-                    Get in on the loyalty program where you can earn points and unlock
-                    serious perks. Starting with these as soon as you join:
-                </p>
-                <ul class="registration__loyality-list">
-                    <li class="registration__loyality-item">15% off welcome offer</li>
-                    <li class="registration__loyality-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__loyality-item">$10 off a purchase on your birthday</li>
-                    <li class="registration__loyality-item">Early access to products</li>
-                    <li class="registration__loyality-item">Exclusive offers & rewards</li>
+        <div class="cart-wrp container">
+            <section class="cart">
+                <h2 class="cart__title visually-hidden">products in&nbsp;the cart</h2>
+                <ul class="cart__list">
+                    <li class="cart__item">
+                        <button class="cart__item-icon" type="button">
+                            <svg class="cart__item-cross" width="18" height="18" viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <img class="cart__item-img" src="./img/product-cart-1.jpg" alt="product" height="306"
+                            width="262">
+                        <div class="cart__item-info">
+                            <h3 class="cart__item-title">
+                                mango people t&nbsp;-&nbsp;shirt
+                            </h3>
+                            <ul class="cart__item-details">
+                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
+                                <li>Color: Red</li>
+                                <li>Size: Xl</li>
+                                <li>Quantity:
+                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
+                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="cart__item">
+                        <button class="cart__item-icon" type="button">
+                            <svg class="cart__item-cross" width="18" height="18" viewBox="0 0 18 18"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </button>
+                        <img class="cart__item-img" src="./img/product-cart-2.jpg" alt="product" height="306"
+                            width="262">
+                        <div class="cart__item-info">
+                            <h3 class="cart__item-title">
+                                mango people t&nbsp;-&nbsp;shirt
+                            </h3>
+                            <ul class="cart__item-details">
+                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
+                                <li>Color: Red</li>
+                                <li>Size: Xl</li>
+                                <li>Quantity:
+                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
+                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
+                <div class="cart__button-wrp">
+                    <button class="cart__button" type="reset">clear shopping cart</button>
+                    <button class="cart__button" type="submit">continue shopping</button>
+                </div>
+            </section>
+            <div class="shipping-wrp">
+                <section class="shipping">
+                    <h2 class="visually-hidden">shipping adress</h2>
+                    <form class="shipping__form" action="#">
+                        <fieldset class="shipping__form-fieldset">
+                            <legend class="shipping__form-legend">shipping adress</legend>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="Bangladesh">
+                            <label class="visually-hidden" for="city">country</label>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="State">
+                            <label class="visually-hidden" for="state">state</label>
+                            <input class="shipping__form-input" type="text" name="address" placeholder="Postcode / Zip">
+                            <label class="visually-hidden" for="Postcode">postcode</label>
+                        </fieldset>
+                        <button class="shipping__form-button" type="submit">get a&nbsp;quote</button>
+                    </form>
+                </section>
+                <section class="total-price">
+                    <h2 class="visually-hidden">total price</h2>
+                    <p class="total-price__text">sub total $900</p>
+                    <h3 class="total-price__result">grand total <span class="total-price__result_pink">$900</span></h3>
+                    <hr class="total-price__hr">
+                    <button class="total-price__button" type="submit">proceed to&nbsp;checkout</button>
+                </section>
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__subscribe">
@@ -290,7 +319,9 @@
             </div>
         </div>
     </footer>
+
     <script src="./JS/script.js"></script>
+
 </body>
 
 </html>

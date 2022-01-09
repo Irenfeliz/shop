@@ -1,0 +1,36 @@
+.benefits {
+    height: 341px;
+    background-color: $black-bkg;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    &__item {
+        max-width: 360px;
+        text-align: center;
+
+        &-img {
+            color: $pink-text;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: $white;
+            margin: 28px auto 16px;
+        }
+
+        &-text {
+            font-weight: 300;
+            line-height: 17px;
+            color: $white;
+        }
+    }
+
+
+}
