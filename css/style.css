@@ -1879,6 +1879,8 @@ table {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
   color: #222222;
   font-weight: normal;
   max-width: 262px;
@@ -2190,7 +2192,7 @@ table {
   background: #f16d7f;
   border: none;
   padding: 15px 40px;
-  width: 75%;
+  width: 100%;
 }
 
 .total-price__button:hover, .total-price__button:focus {
