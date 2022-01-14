@@ -23,10 +23,18 @@
 .header__logo-form-wrp {
     display: flex;
     align-items: center;
+
+    @include mobile {
+        width: 80%;
+    }
 }
 
 .header__menu {
     display: flex;
+
+    @include mobile {
+        width: 20%;
+    }
 }
 
 .header__menu-btn {
@@ -46,12 +54,16 @@
     background-color: transparent;
     position: relative;
 
+    @include mobile {
+        margin: 0 0 0 15px;
+    }
+
     &-form {
         position: relative;
         align-items: center;
         display: flex;
     }
-    
+
     &-input {
         background: $total-white;
         border: none;
@@ -65,8 +77,8 @@
             width: 100%;
         }
 
-        }
-    
+    }
+
     &-button {
         position: absolute;
         color: #131010;
@@ -93,6 +105,9 @@
 .header__search:hover .header__search-form {
     display: flex;
     outline: none;
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .header__search:hover .header__menu-icon,
@@ -103,6 +118,9 @@
 
 .header__search-input:hover {
     outline: 2px solid #949292;
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .header__link:active,
