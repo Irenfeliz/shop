@@ -28,8 +28,6 @@
         }
     }
 
-    &__title {}
-
     &__form {
         &-input {
             @include form-input;
