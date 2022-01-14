@@ -218,19 +218,6 @@ table {
           align-items: center;
 }
 
-.header__search {
-  margin: 0 0 0 41px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  background-color: transparent;
-  position: relative;
-}
-
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,6 +231,19 @@ table {
 
 .header__menu-icon {
   color: #E8E8E8;
+}
+
+.header__search {
+  margin: 0 0 0 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
 }
 
 .header__search-form {
@@ -264,6 +264,12 @@ table {
   padding: 0 0 0 22px;
   margin: 0 0 0 10px;
   border-radius: 250px;
+}
+
+@media (max-width: 767px) {
+  .header__search-input {
+    width: 100%;
+  }
 }
 
 .header__search-button {
@@ -431,7 +437,9 @@ table {
 
 @media (max-width: 1599px) {
   .brand {
-    min-height: 370px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     margin: 0 0 20px;
   }
 }
@@ -1039,8 +1047,7 @@ table {
 
 @media (max-width: 1599px) {
   .footer__subscribe {
-    background-image: url(../../img/footer-bkg-tablet.jpg);
-    background-position: left bottom;
+    background-position: -350px;
     background-size: cover;
     padding: 64px 0 140px;
     min-height: -webkit-fit-content;

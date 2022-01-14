@@ -3,7 +3,7 @@
     margin: 0 0 63px;
     
     @include tablet {
-        min-height: 370px;
+        min-height: fit-content;
         margin: 0 0 20px;
     }
 
