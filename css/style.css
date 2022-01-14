@@ -1027,7 +1027,14 @@ table {
   background-image: url(../img/footer-bkg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   min-height: 448px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1599px) {
