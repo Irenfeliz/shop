@@ -1711,7 +1711,12 @@ table {
       -ms-flex-align: center;
           align-items: center;
   background: #F8F3F4;
-  text-align: center;
+}
+
+@media (max-width: 1599px) {
+  .cart__page {
+    text-align: center;
+  }
 }
 
 .cart__page-title {
@@ -1954,7 +1959,7 @@ table {
 }
 
 .shipping-wrp {
-  width: 31%;
+  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2139,7 +2144,7 @@ table {
   background: #f16d7f;
   border: none;
   padding: 15px 40px;
-  width: 75%;
+  width: 100%;
 }
 
 .total-price__button:hover, .total-price__button:focus {

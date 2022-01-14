@@ -28,7 +28,10 @@
 
     &__page {
         @include page;
+        
+        @include tablet {
         text-align: center;
+    }
 
         &-title {
             @include page-title;
