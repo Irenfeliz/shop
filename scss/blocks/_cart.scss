@@ -4,6 +4,14 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 96px auto 128px;
+        width: 57%;
+
+        @include tablet {
+            margin: 59px auto 40px;
+            justify-content: center;
+            width: 100%
+
+        }
     }
 
     &__page {
@@ -22,7 +30,7 @@
     &__item {
         position: relative;
         display: flex;
-        width: 652px;
+
         margin: 0 0 40px;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 
