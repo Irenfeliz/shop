@@ -1,10 +1,31 @@
 .shipping {
     margin: 0 0 58px;
 
+    @include tablet {
+        width: 49%;
+        margin: 0 16px 0 0;
+    }
+
+    @include mobile {
+        width: 100%;
+        margin: 0 0 48px;
+    }
+
     &-wrp {
         width: 31%;
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            width: 100%
+        }
+
+        @include mobile {
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__title {}
@@ -39,11 +60,19 @@
             margin: 24px 0 0 0;
             border: 1px solid #A4A4A4;
             background-color: $total-white;
-            font-weight: 300;
-            font-size: 11px;
-            line-height: 13px;
+            @include font(11px, 13px, 300);
             color: #4A4A4A;
             justify-content: left;
+
+            @include mobile {
+                text-transform: none;
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+                color: #575757;
+                @include font(11px, 13px, 400);
+            }
 
             &:hover,
             &:focus {
@@ -53,6 +82,7 @@
                 border: 1px solid $active-light;
                 outline: none;
             }
+
             &:active {
                 background-color: $active-light;
                 border: 1px solid $active;
