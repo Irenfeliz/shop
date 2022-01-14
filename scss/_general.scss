@@ -83,3 +83,7 @@ button:hover {
 .center {
     text-align: center;
 }
+
+button, input, ::placeholder {
+    font-family: "Lato";
+}

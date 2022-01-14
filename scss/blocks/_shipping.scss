@@ -70,6 +70,7 @@
                 &::first-letter {
                     text-transform: uppercase;
                 }
+
                 color: #575757;
                 @include font(11px, 13px, 400);
             }
