@@ -8,12 +8,30 @@
 
 .registration {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 64px auto 96px;
+
+    @include tablet {
+        margin: 40px auto 96px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .registration__form {
-    max-width: 360px;
+    width: 31%;
+
+    @include tablet {
+        width: 49%;
+    }
+
+    @include mobile {
+        width: 100%;
+        margin: 0 0 40px;
+    }
 
     &-legend {
         @include form-legend;
@@ -22,6 +40,7 @@
 
 .registration__form-input {
     @include form-input;
+    width: calc(100% - 17px);
 
     &::placeholder {
         @include form-input-placeholder;
@@ -49,6 +68,7 @@
     border: 1px solid #A4A4A4;
     outline: none;
     margin: 0;
+
 }
 
 .registration__form-fieldset input[type="radio"]:checked {
@@ -64,6 +84,10 @@
 
 .registration__form-fieldset label {
     margin: 0 20px 0 10px;
+
+    @include tablet {
+        @include font (11px, 13px, 300);
+    }
 }
 
 .registration__form-text {
@@ -109,43 +133,58 @@
 }
 
 .registration__loyality {
-    max-width: 652px;
-}
+    width: 57%;
 
-.registration__loyality-title {
-    text-transform: uppercase;
-    color: $total-black;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
+    @include tablet {
+        width: 48%;
+    }
 
-.registration__loyality-text {
-    margin: 22px 0 21px;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-}
+    @include mobile {
+        width: 100%;
+    }
 
-.registration__loyality-list {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 29px;
-    margin-left: 42px;
-}
+    &-title {
+        text-transform: uppercase;
+        color: $total-black;
+        @include font (24px, 29px, 300);
 
-.registration__loyality-item {
-    position: relative;
-    margin: 0 0 16px;
-}
+        @include tablet {
+            @include font (16px, 19px, 300);
+        }
+    }
 
-.registration__loyality-item::before {
-    position: absolute;
-    content: '';
-    background-image: url(../img/mark.svg);
-    width: 20px;
-    height: 16px;
-    left: -42px;
-    top: 50%;
-    transform: translateY(-50%);
+    &-text {
+        margin: 22px 0 21px;
+        @include font (24px, 29px, 300);
+
+        @include tablet {
+            @include font (16px, 19px, 300);
+        }
+    }
+
+    &-list {
+        @include font (24px, 29px, 300);
+        margin-left: 42px;
+
+        @include tablet {
+            @include font (16px, 19px, 300);
+        }
+    }
+
+    &-item {
+        position: relative;
+        margin: 0 0 16px;
+
+
+        &::before {
+            position: absolute;
+            content: '';
+            background-image: url(../img/mark.svg);
+            width: 20px;
+            height: 16px;
+            left: -42px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
 }
