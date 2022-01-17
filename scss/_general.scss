@@ -87,3 +87,11 @@ button:hover {
 button, input, ::placeholder {
     font-family: "Lato";
 }
+
+.page {
+    @include page
+}
+
+.page-title {
+    @include page-title
+}

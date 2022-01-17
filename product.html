@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -16,8 +16,8 @@
         <div class="header__wrp container">
             <div class="header__logo-form-wrp">
                 <a class="header__logo" href="index.html">
-                    <svg class="header__logo-icon" width="44" height="38" viewBox="0 0 44 38"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg width="44" height="38" viewBox="0 0 44 38" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <rect width="44" height="38" fill="url(#pattern0)" />
                         <defs>
                             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -86,7 +86,7 @@
                 <h2 class="header__nav-title">menu</h2>
                 <ul class="header__nav-list">
                     <li class="header__nav-item nav-item">
-                        <a class="nav-item__title" href="product.html">man</a>
+                        <a class="nav-item__title" href="#">man</a>
                         <ul class="nav-item__list">
                             <li><a class="nav-item__link" href="#">Bags</a></li>
                             <li><a class="nav-item__link" href="#">Denim</a></li>
@@ -95,7 +95,7 @@
                         </ul>
                     </li>
                     <li class="header__nav-item nav-item">
-                        <a class="nav-item__title" href="product.html">woman</a>
+                        <a class="nav-item__title" href="#">woman</a>
                         <ul class="nav-item__list">
                             <li><a class="nav-item__link" href="#">Accessories</a></li>
                             <li>
@@ -107,7 +107,7 @@
                         </ul>
                     </li>
                     <li class="header__nav-item nav-item">
-                        <a class="nav-item__title" href="product.html">kids</a>
+                        <a class="nav-item__title" href="#">kids</a>
                         <ul class="nav-item__list">
                             <li>
                                 <a class="nav-item__link" href="#">Jackets &amp;&nbsp;Coats</a>
@@ -121,99 +121,105 @@
                     </li>
                 </ul>
             </div>
+            </div>
         </nav>
     </header>
-    <main>
+    <main class="product">
         <section class="page">
-            <h1 class="page-title container">shopping cart</h1>
-        </section>
-        <div class="cart-wrp container">
-            <section class="cart">
-                <h2 class="cart__title visually-hidden">products in&nbsp;the cart</h2>
-                <ul class="cart__list">
-                    <li class="cart__item">
-                        <img class="cart__item-img" src="./img/product-cart-1.jpg" alt="product">
-                        <div class="cart__item-info">
-                            <button class="cart__item-icon" type="button">
-                                <svg class="cart__item-cross" width="18" height="18" viewBox="0 0 18 18"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </button>
-                            <h3 class="cart__item-title">
-                                mango people t&nbsp;-&nbsp;shirt
-                            </h3>
-                            <ul class="cart__item-details">
-                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
-                                <li>Color: Red</li>
-                                <li>Size: Xl</li>
-                                <li>Quantity:
-                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
-                                    <label class="visually-hidden" for="quantity">quantity</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="cart__item">
-                        <img class="cart__item-img" src="./img/product-cart-2.jpg" alt="product">
-                        <div class="cart__item-info">
-                            <button class="cart__item-icon" type="button">
-                                <svg class="cart__item-cross" width="18" height="18" viewBox="0 0 18 18"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z"
-                                        fill="currentColor" />
-                                </svg>
-                            </button>
-                            <h3 class="cart__item-title">
-                                mango people t&nbsp;-&nbsp;shirt
-                            </h3>
-                            <ul class="cart__item-details">
-                                <li>Price: <span class="cart__item-details_pink">$300</span></li>
-                                <li>Color: Red</li>
-                                <li>Size: Xl</li>
-                                <li>Quantity:
-                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
-                                    <label class="visually-hidden" for="quantity">quantity</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cart__button-wrp">
-                    <button class="cart__button" type="reset">clear shopping cart</button>
-                    <button class="cart__button" type="submit">continue shopping</button>
-                </div>
-            </section>
-            <div class="shipping-wrp">
-                <section class="shipping">
-                    <h2 class="visually-hidden">shipping adress</h2>
-                    <form class="shipping__form" action="#">
-                        <fieldset class="shipping__form-fieldset">
-                            <legend class="shipping__form-legend">shipping adress</legend>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="Bangladesh">
-                            <label class="visually-hidden" for="city">country</label>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="State">
-                            <label class="visually-hidden" for="state">state</label>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="Postcode / Zip">
-                            <label class="visually-hidden" for="Postcode">postcode</label>
-                        </fieldset>
-                        <button class="shipping__form-button" type="submit">get a&nbsp;quote</button>
-                    </form>
-                </section>
-                <section class="total-price">
-                    <h2 class="visually-hidden">total price</h2>
-                    <p class="total-price__text">sub total $900</p>
-                    <h3 class="total-price__result">grand total <span class="total-price__result_pink">$900</span></h3>
-                    <hr class="total-price__hr">
-                    <div class="center">
-                        <button class="total-price__button" type="submit">proceed to&nbsp;checkout</button>
-                    </div>
-                </section>
+            <div class="container page__product">
+                <h1 class="page-title">new arrivals</h1>
+                <!--bootstrap part start-->
+                <nav aria-label="breadcrumb">
+                    <h2 class="visually-hidden">breadcrumb</h2>
+                    <ol class="product__breadcrumb">
+                        <li class="product__breadcrumb-item"><a href="index.html">home</a></li>
+                        <li class="product__breadcrumb-item"><a href="#">men</a></li>
+                        <li class="product__breadcrumb-item active" aria-current="page">new arrivals</li>
+                    </ol>
+                </nav>
             </div>
-        </div>
+        </section>
+        <section class="product__carousel">
+            <h2 class="visually-hidden">slider</h2>
+            <div id="carouselexamplecontrols" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active carousel-item-wrp">
+                        <img class="carousel-item__img" src="img/slider.jpg" class="d-block w-100" alt="slider-image">
+                    </div>
+                    <div class="carousel-item carousel-item-wrp">
+                        <img class="carousel-item__img" src="img/slider.jpg" class="d-block w-100" alt="slider-image">
+                    </div>
+                    <div class="carousel-item carousel-item-wrp">
+                        <img class="carousel-item__img" src="img/slider.jpg" class="d-block w-100" alt="slider-image">
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-control-wrp" type="button"
+                    data-bs-target="#carouselexamplecontrols" data-bs-slide="prev">
+                    <i class="fas fa-chevron-left fas-wrp"></i>
+                    <span class="visually-hidden">previous</span>
+                </button>
+                <button class="carousel-control-next carousel-control-wrp" type="button"
+                    data-bs-target="#carouselexamplecontrols" data-bs-slide="next">
+                    <i class="fas fa-chevron-right fas-wrp"></i>
+                    <span class="visually-hidden">next</span>
+                </button>
+            </div>
+        </section>
+        <section class="product__item container">
+            <h2 class="product__item-title">women collection</h2>
+            <hr class="product__item-title-hr">
+            <h3 class="product__item-subtitle">moschino cheap and chic</h3>
+            <p class="product__item-description">Compellingly actualize fully researched processes before proactive
+                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <p class="product__item-price">$561</p>
+            <hr class="product__item-hr">
+            <!-- bootstrap dropdowns -->
+            <div class="product__dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        choose color
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">red</a></li>
+                        <li><a class="dropdown-item" href="#">blue</a></li>
+                        <li><a class="dropdown-item" href="#">black</a></li>
+                        <li><a class="dropdown-item" href="#">white</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        choose size
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">xs</a></li>
+                        <li><a class="dropdown-item" href="#">s</a></li>
+                        <li><a class="dropdown-item" href="#">m</a></li>
+                        <li><a class="dropdown-item" href="#">l</a></li>
+                        <li><a class="dropdown-item" href="#">xl</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        quantity
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5</a></li>
+                        <li><a class="dropdown-item" href="#">6</a></li>
+                        <li><a class="dropdown-item" href="#">7</a></li>
+                        <li><a class="dropdown-item" href="#">8</a></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="product__item-button" type="button">Add to Cart</button>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__subscribe">
