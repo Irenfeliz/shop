@@ -14,24 +14,27 @@
 .header__link {
     text-decoration: none;
     margin: 0 0 0 33px;
+
+    @include mobile {
+        display: none;
+    }
 }
 
 .header__logo-form-wrp {
     display: flex;
     align-items: center;
-}
 
-.header__search {
-    margin: 0 0 0 41px;
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: transparent;
-    position: relative;
+    @include mobile {
+        width: 80%;
+    }
 }
 
 .header__menu {
     display: flex;
+
+    @include mobile {
+        width: 20%;
+    }
 }
 
 .header__menu-btn {
@@ -43,30 +46,48 @@
     color: #E8E8E8;
 }
 
-.header__search-form {
-    position: relative;
-    align-items: center;
+.header__search {
+    margin: 0 0 0 41px;
     display: flex;
-}
-
-.header__search-input {
-    background: $total-white;
+    align-items: center;
     border: none;
-    height: 44px;
-    width: 350px;
-    padding: 0 0 0 22px;
-    margin: 0 0 0 10px;
-    border-radius: 250px;
-}
+    background-color: transparent;
+    position: relative;
 
-.header__search-button {
-    position: absolute;
-    color: #131010;
-    background: transparent;
-    border: none;
-    right: 15px;
-    width: 30px;
-    height: 30px;
+    @include mobile {
+        margin: 0 0 0 15px;
+    }
+
+    &-form {
+        position: relative;
+        align-items: center;
+        display: flex;
+    }
+
+    &-input {
+        background: $total-white;
+        border: none;
+        height: 44px;
+        width: 350px;
+        padding: 0 0 0 22px;
+        margin: 0 0 0 10px;
+        border-radius: 250px;
+
+        @include mobile {
+            width: 100%;
+        }
+
+    }
+
+    &-button {
+        position: absolute;
+        color: #131010;
+        background: transparent;
+        border: none;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .header__search-button:hover .header__menu-icon_search {
@@ -84,6 +105,9 @@
 .header__search:hover .header__search-form {
     display: flex;
     outline: none;
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .header__search:hover .header__menu-icon,
@@ -94,6 +118,9 @@
 
 .header__search-input:hover {
     outline: 2px solid #949292;
+    @include mobile {
+        margin: 0;
+    }
 }
 
 .header__link:active,

@@ -2,58 +2,84 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+        justify-content: center;
+    }
 }
 
 .sales__item {
-    width: 360px;
-    height: 260px;
+    width: 31%;
+    min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
+    text-align: center;
 
-.sales__item-link {
-    text-decoration: none;
-}
+    @include tablet {
+        min-height: 167px;
+    }
 
-.sales__item_woman {
-    background-image: url(../img/item-woman.jpg);
-}
+    @include mobile {
+        width: 95%;
+        min-height: 247px;
+        margin: 0 0 32px;
+    }
 
-.sales__item_man {
-    background-image: url(../img/item-man.jpg);
-}
+    &-link {
+        display: block;
+        text-decoration: none;
+    }
 
-.sales__item_kids {
-    background-image: url(../img/item-kids.jpg);
-}
+    &_woman {
+        background-image: url(../img/item-woman.jpg);
+        background-size: cover;
+    }
 
-.sales__item_accesories {
-    background-image: url(../img/item-accesories.jpg);
-    width: 100%;
-    margin: 30px 0 0;
-    height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    &_man {
+        background-image: url(../img/item-man.jpg);
+        background-size: cover;
+    }
 
-.sales__item-text {
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: $total-white;
-}
+    &_kids {
+        background-image: url(../img/item-kids.jpg);
+        background-size: cover;
+    }
 
-.sales__item-title {
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    color: $pink-text;
+    &_accesories {
+        background-image: url(../img/item-accesories.jpg);
+        background-size: cover;
+        width: 100%;
+        margin: 30px 0 0;
+        min-height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include tablet {
+            margin: 19px 0 0;
+        }
+
+        @include mobile {
+            margin: 0;
+            width: 95%;
+            min-height: 111px;
+        }
+    }
+
+    &-text {
+        text-transform: uppercase;
+        @include font(16px, 19px, 400);
+        color: $total-white;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        @include font(24px, 29px, 700);
+        color: $pink-text;
+    }
 }
 
 .sales__item-link:hover .sales__item-title,
