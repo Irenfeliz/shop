@@ -124,101 +124,164 @@
             </div>
         </nav>
     </header>
-    <main class="product">
-        <section class="page">
-            <div class="container page__product">
-                <h1 class="page-title">new arrivals</h1>
-                <!--bootstrap part start-->
-                <nav aria-label="breadcrumb">
-                    <h2 class="visually-hidden">breadcrumb</h2>
-                    <ol class="product__breadcrumb">
-                        <li class="product__breadcrumb-item"><a href="index.html">home</a></li>
-                        <li class="product__breadcrumb-item"><a href="#">men</a></li>
-                        <li class="product__breadcrumb-item active" aria-current="page">new arrivals</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
-        <section class="product__carousel">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active carousel-item-wrp">
-                        <img class="carousel-item__img" src="./img/slider.jpg" class="d-block w-100" alt="slider-image">
-                    </div>
-                    <div class="carousel-item carousel-item-wrp">
-                        <img class="carousel-item__img" src="./img/product-1.jpg" class="d-block w-100" alt="slider-image">
-                    </div>
-                    <div class="carousel-item carousel-item-wrp">
-                        <img class="carousel-item__img" src="./img/man.jpg" class="d-block w-100" alt="slider-image">
-                    </div>
+    <main>
+        <div class="product">
+            <!--bootstrap breadcrumb-->
+            <section class="page">
+                <div class="container page__product">
+                    <h1 class="page-title">new arrivals</h1>
+                    <nav aria-label="breadcrumb">
+                        <h2 class="visually-hidden">breadcrumb</h2>
+                        <ol class="product__breadcrumb">
+                            <li class="product__breadcrumb-item"><a href="index.html">home</a></li>
+                            <li class="product__breadcrumb-item"><a href="#">men</a></li>
+                            <li class="product__breadcrumb-item active" aria-current="page">new arrivals</li>
+                        </ol>
+                    </nav>
                 </div>
-                <button class="carousel-control-prev carousel-control-wrp" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <i class="fas fa-chevron-left fas-wrp"></i>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next carousel-control-wrp" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <i class="fas fa-chevron-right fas-wrp"></i>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        <section class="product__item container">
-            <h2 class="product__item-title">women collection</h2>
-            <hr class="product__item-title-hr">
-            <h3 class="product__item-subtitle">moschino cheap and chic</h3>
-            <p class="product__item-description">Compellingly actualize fully researched processes before proactive
-                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                Completely visualize parallel core competencies rather than exceptional portals.</p>
-            <p class="product__item-price">$561</p>
-            <hr class="product__item-hr">
+            </section>
+            <!-- bootstrap carousel -->
+            <section class="product__carousel">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel-item-wrp">
+                            <img class="carousel-item__img" src="./img/slider.jpg" class="d-block w-100"
+                                alt="slider-image">
+                        </div>
+                        <div class="carousel-item carousel-item-wrp">
+                            <img class="carousel-item__img" src="./img/slider.jpg" class="d-block w-100"
+                                alt="slider-image">
+                        </div>
+                        <div class="carousel-item carousel-item-wrp">
+                            <img class="carousel-item__img" src="./img/slider.jpg" class="d-block w-100"
+                                alt="slider-image">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev carousel-control-wrp" type="button"
+                        data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left fas-wrp"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-control-wrp" type="button"
+                        data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <i class="fas fa-chevron-right fas-wrp"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
             <!-- bootstrap dropdowns -->
-            <div class="product__dropdown">
-                <div class="btn-group">
-                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        choose color
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">red</a></li>
-                        <li><a class="dropdown-item" href="#">blue</a></li>
-                        <li><a class="dropdown-item" href="#">black</a></li>
-                        <li><a class="dropdown-item" href="#">white</a></li>
-                    </ul>
+            <section class="product__item container">
+                <h2 class="product__item-title">women collection</h2>
+                <hr class="product__item-title-hr">
+                <h3 class="product__item-subtitle">moschino cheap and chic</h3>
+                <p class="product__item-description">Compellingly actualize fully researched processes before proactive
+                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                    Completely visualize parallel core competencies rather than exceptional portals.</p>
+                <p class="product__item-price">$561</p>
+                <hr class="product__item-hr">
+                <div class="product__dropdown">
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            choose color
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">red</a></li>
+                            <li><a class="dropdown-item" href="#">blue</a></li>
+                            <li><a class="dropdown-item" href="#">black</a></li>
+                            <li><a class="dropdown-item" href="#">white</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            choose size
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">xs</a></li>
+                            <li><a class="dropdown-item" href="#">s</a></li>
+                            <li><a class="dropdown-item" href="#">m</a></li>
+                            <li><a class="dropdown-item" href="#">l</a></li>
+                            <li><a class="dropdown-item" href="#">xl</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            quantity
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                            <li><a class="dropdown-item" href="#">5</a></li>
+                            <li><a class="dropdown-item" href="#">6</a></li>
+                            <li><a class="dropdown-item" href="#">7</a></li>
+                            <li><a class="dropdown-item" href="#">8</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="btn-group">
-                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        choose size
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">xs</a></li>
-                        <li><a class="dropdown-item" href="#">s</a></li>
-                        <li><a class="dropdown-item" href="#">m</a></li>
-                        <li><a class="dropdown-item" href="#">l</a></li>
-                        <li><a class="dropdown-item" href="#">xl</a></li>
-                    </ul>
+                <button class="product__item-button" type="button">Add to Cart</button>
+            </section>
+            <!--bootstrap grid-->
+            <section class="product__grid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-wrp"> <img class="product__grid-img" src="./img/product-4.jpg"
+                                    alt="product-1" width="360" height="420" />
+                                <div class="product__grid-info">
+                                    <h3 class="product__grid-title">
+                                        ellery x&nbsp;m&rsquo;o capsule
+                                    </h3>
+                                    <p class="product__grid-text">
+                                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                                        Operandi.
+                                    </p>
+                                    <p class="product__grid-price">$52.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col-wrp">
+                                <img class="product__grid-img" src="./img/product-3.jpg" alt="product-2" width="360"
+                                    height="420" />
+                                <div class="product__grid-info">
+                                    <h3 class="product__grid-title">
+                                        ellery x&nbsp;m&rsquo;o capsule
+                                    </h3>
+                                    <p class="product__grid-text">
+                                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                                        Operandi.
+                                    </p>
+                                    <p class="product__grid-price">$52.00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col-wrp">
+                                <img class="product__grid-img" src="./img/product-6.jpg" alt="product-3" width="360"
+                                    height="420" />
+                                <div class="product__grid-info">
+                                    <h3 class="product__grid-title">
+                                        ellery x&nbsp;m&rsquo;o capsule
+                                    </h3>
+                                    <p class="product__grid-text">
+                                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                                        Operandi.
+                                    </p>
+                                    <p class="product__grid-price">$52.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn-group">
-                    <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        quantity
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">1</a></li>
-                        <li><a class="dropdown-item" href="#">2</a></li>
-                        <li><a class="dropdown-item" href="#">3</a></li>
-                        <li><a class="dropdown-item" href="#">4</a></li>
-                        <li><a class="dropdown-item" href="#">5</a></li>
-                        <li><a class="dropdown-item" href="#">6</a></li>
-                        <li><a class="dropdown-item" href="#">7</a></li>
-                        <li><a class="dropdown-item" href="#">8</a></li>
-                    </ul>
-                </div>
-            </div>
-            <button class="product__item-button" type="button">Add to Cart</button>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer__subscribe">

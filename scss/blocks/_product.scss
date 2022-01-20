@@ -1,10 +1,14 @@
-.product {
-    box-sizing: border-box;
-}
+// .product {
+//     box-sizing: border-box;
+// }
 
-.page {
+.product {
     @include mobile {
-        padding: 24px 0 46px;
+        .page {
+            display: flex;
+            justify-content: center;
+            padding: 24px 0 46px;
+        }
     }
 }
 
@@ -15,13 +19,15 @@
     flex-wrap: wrap;
 
     @include mobile {
+        flex-direction: column;
         justify-content: center;
-    }
-}
 
-.page-title {
-    @include mobile {
-        margin: 0 0 32px;
+    }
+
+    .page-title {
+        @include mobile {
+            margin: 0 0 32px;
+        }
     }
 }
 
@@ -232,4 +238,71 @@
     background: url(../img/item-basket-pink.svg) no-repeat;
     width: 26px;
     height: 24px;
+}
+
+.product__grid {
+
+    margin: 0 0 128px;
+
+    @include tablet {
+        .col:last-child {
+            display: none;
+        }
+
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @include mobile {
+        .col {
+            flex: none;
+        }
+
+        .col:last-child {
+            display: block;
+        }
+
+        .col:nth-child(2) {
+            display: none;
+        }
+
+        .row {
+            flex-direction: row;
+        }
+
+        margin: 0 0 64px;
+    }
+
+    &-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &-info {
+        padding: 24px 28px 20px 16px;
+    }
+
+    &-title {
+        text-transform: uppercase;
+        font-size: 13px;
+        color: $total-black;
+        margin: 0 0 12px;
+    }
+
+    &-text {
+        color: #5d5d5d;
+        font-weight: 300;
+        line-height: 17px;
+    }
+
+    &-price {
+        color: $pink-text;
+        margin: 18px 0 0;
+    }
+
+    .col-wrp {
+        background-color: #f8f8f8
+    }
 }

@@ -156,12 +156,14 @@
 }
 
 .footer__bottom {
+    display: flex;
+    align-items: center;
     background-color: $black-bkg;
-    height: 79px;
+    min-height: 79px;
 
     @include mobile {
         padding: 43px 0 9px;
-        height: 91px;
+        min-height: 91px;
     }
 }
 
