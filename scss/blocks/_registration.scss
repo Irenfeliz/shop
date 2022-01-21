@@ -1,11 +1,3 @@
-.registration__page {
-    @include page;
-
-    &-title {
-        @include page-title
-    }
-}
-
 .registration {
     display: flex;
     flex-wrap: wrap;

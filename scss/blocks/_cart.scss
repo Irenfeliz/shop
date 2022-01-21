@@ -7,6 +7,7 @@
         margin: 0 auto 40px;
         width: 100%;
     }
+
     @include mobile {
         margin: 0 auto 48px;
     }
@@ -26,17 +27,6 @@
         }
     }
 
-    &__page {
-        @include page;
-        
-        @include tablet {
-        text-align: center;
-    }
-
-        &-title {
-            @include page-title;
-        }
-    }
 
     &__list {
         display: flex;
@@ -123,8 +113,7 @@
 
         &-title {
             text-transform: uppercase;
-            font-size: 24px;
-            line-height: 29px;
+            @include font (24px, 29px);
             color: $black;
             font-weight: normal;
             max-width: 262px;
@@ -179,13 +168,16 @@
         @include mobile {
             @include font(12px, 14px, 400);
             margin: 0;
-            text-transform:none;
+            text-transform: none;
             padding: 9px 17px;
             width: 48%;
+
             &:first-letter {
                 text-transform: uppercase;
             }
-            color: #575757;;
+
+            color: #575757;
+            ;
         }
 
         &-wrp {
