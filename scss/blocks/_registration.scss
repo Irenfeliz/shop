@@ -97,11 +97,13 @@
     position: relative;
     font-weight: normal;
     line-height: 17px;
+    transition: background 500ms, border-radius 500ms;
 }
 
 .registration__form-button:hover,
 .registration__form-button:focus {
     background: #E05C6E;
+    border-radius: 10px;
     outline: none;
 }
 

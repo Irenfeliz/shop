@@ -149,8 +149,8 @@
                                 <li>Color: Red</li>
                                 <li>Size: Xl</li>
                                 <li>Quantity:
-                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
-                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                    <input class="cart__item-quantity" type="number" id="quantity-1" min="1" required>
+                                    <label class="visually-hidden" for="quantity-1">quantity</label>
                                 </li>
                             </ul>
                         </div>
@@ -174,8 +174,8 @@
                                 <li>Color: Red</li>
                                 <li>Size: Xl</li>
                                 <li>Quantity:
-                                    <input class="cart__item-quantity" type="number" id="quantity" min="1" required>
-                                    <label class="visually-hidden" for="quantity">quantity</label>
+                                    <input class="cart__item-quantity" type="number" id="quantity-2" min="1" required>
+                                    <label class="visually-hidden" for="quantity-2">quantity</label>
                                 </li>
                             </ul>
                         </div>
@@ -192,12 +192,12 @@
                     <form class="shipping__form" action="#">
                         <fieldset class="shipping__form-fieldset">
                             <legend class="shipping__form-legend">shipping adress</legend>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="Bangladesh">
+                            <input class="shipping__form-input" type="text" id="city" name="address" placeholder="Bangladesh">
                             <label class="visually-hidden" for="city">country</label>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="State">
+                            <input class="shipping__form-input" type="text" id="state" name="address" placeholder="State">
                             <label class="visually-hidden" for="state">state</label>
-                            <input class="shipping__form-input" type="text" name="address" placeholder="Postcode / Zip">
-                            <label class="visually-hidden" for="Postcode">postcode</label>
+                            <input class="shipping__form-input" type="text" id="postcode" name="address" placeholder="Postcode / Zip">
+                            <label class="visually-hidden" for="postcode">postcode</label>
                         </fieldset>
                         <button class="shipping__form-button" type="submit">get a&nbsp;quote</button>
                     </form>
@@ -317,7 +317,6 @@
     </footer>
 
     <script src="./js/bootstrap.bundle.js"></script>
-    <!-- <script src="./js/bootstrap.bundle.js.map"></script> -->
     <script src="./js/script.js"></script>
 </body>
 
