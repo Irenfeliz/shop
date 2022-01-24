@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Catalog</title>
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css" />
@@ -124,64 +125,251 @@
     </header>
     <main>
         <section class="page">
-            <h1 class="page-title container">registration</h1>
-        </section>
-        <section class="registration container">
-            <div class="registration__form">
-                <h2 class="registration__form-title visually-hidden">registration form</h2>
-                <form class="registration__form-inputs" action="#">
-                    <fieldset>
-                        <legend class="registration__form-legend">Your Name</legend>
-
-                        <input class="registration__form-input" type="text" id="first-name" name="fname"
-                            placeholder="First Name" />
-                        <label class="visually-hidden" for="first-name">First Name</label>
-
-                        <input class="registration__form-input" type="text" id="last-name" name="lname"
-                            placeholder="Last Name" />
-                        <label class="visually-hidden" for="last-name">Last Name</label>
-                    </fieldset>
-                    <fieldset class="registration__form-fieldset">
-                        <legend class="visually-hidden">Gender</legend>
-
-                        <input type="radio" id="male" name="gender" value="male" checked />
-                        <label for="male">Male</label>
-
-                        <input type="radio" id="female" name="gender" value="female" />
-                        <label for="female">Female</label>
-
-                        <input type="radio" id="other" name="gender" value="other" />
-                        <label for="other">Other</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend class="registration__form-legend">Login details</legend>
-                        <input class="registration__form-input" id="email" type="email" name="email"
-                            placeholder="Email" />
-                        <label class="visually-hidden" for="email">Email</label>
-                        <input class="registration__form-input" id="password" type="password" name="password"
-                            placeholder="Password" />
-                        <label class="visually-hidden" for="password">Password</label>
-                    </fieldset>
-                    <p class="registration__form-text">
-                        Please use 8 or more characters, with at least 1 number and a
-                        mixture of uppercase and lowercase letters
-                    </p>
-                    <button class="registration__form-button" type="submit">join now</button>
-                </form>
+            <div class="container page__product">
+                <h1 class="page-title">new arrivals</h1>
+                <nav aria-label="breadcrumb">
+                    <h2 class="visually-hidden">breadcrumb</h2>
+                    <ol class="product__breadcrumb">
+                        <li class="product__breadcrumb-item"><a href="index.html">home</a></li>
+                        <li class="product__breadcrumb-item"><a href="catalog.html">men</a></li>
+                        <li class="product__breadcrumb-item active" aria-current="page">new arrivals</li>
+                    </ol>
+                </nav>
             </div>
-            <div class="registration__loyality">
-                <h3 class="registration__loyality-title">loyalty has its perks</h3>
-                <p class="registration__loyality-text">
-                    Get in on the loyalty program where you can earn points and unlock
-                    serious perks. Starting with these as soon as you join:
-                </p>
-                <ul class="registration__loyality-list">
-                    <li class="registration__loyality-item">15% off welcome offer</li>
-                    <li class="registration__loyality-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__loyality-item">$10 off a purchase on your birthday</li>
-                    <li class="registration__loyality-item">Early access to products</li>
-                    <li class="registration__loyality-item">Exclusive offers & rewards</li>
-                </ul>
+        </section>
+        <section class="catalog container">
+            <h2 class="visually-hidden">catalog</h2>
+            <div class="catalog__menu">
+                <div class="catalog__filter">
+                    <h3>filter</h3>
+                </div>
+                <!-- bootstrap dropdowns - !change to checkbox!-->
+                <div class="catalog__dropdown">
+                    <h3 class="visually-hidden">dropdown</h3>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            trending now
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">red</a></li>
+                            <li><a class="dropdown-item" href="#">blue</a></li>
+                            <li><a class="dropdown-item" href="#">black</a></li>
+                            <li><a class="dropdown-item" href="#">white</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            size
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">xs</a></li>
+                            <li><a class="dropdown-item" href="#">s</a></li>
+                            <li><a class="dropdown-item" href="#">m</a></li>
+                            <li><a class="dropdown-item" href="#">l</a></li>
+                            <li><a class="dropdown-item" href="#">xl</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            price
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">1</a></li>
+                            <li><a class="dropdown-item" href="#">2</a></li>
+                            <li><a class="dropdown-item" href="#">3</a></li>
+                            <li><a class="dropdown-item" href="#">4</a></li>
+                            <li><a class="dropdown-item" href="#">5</a></li>
+                            <li><a class="dropdown-item" href="#">6</a></li>
+                            <li><a class="dropdown-item" href="#">7</a></li>
+                            <li><a class="dropdown-item" href="#">8</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="catalog__grid">
+                <li class="item-1 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-1.jpg" alt="product-1" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-2 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-2-2.jpg" alt="product-2" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-3 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-3.jpg" alt="product-3" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-4 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-4.jpg" alt="product-4" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-5 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-5-2.jpg" alt="product-5" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-6 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-6-2.jpg" alt="product-6" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-7 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-7.jpg" alt="product-7" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-8 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-8.jpg" alt="product-8" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+                <li class="item-9 catalog__item">
+                    <div class="catalog__item-wrp">
+                        <img class="catalog__item-img" src="./img/product-9.jpg" alt="product-9" />
+                        <div class="catalog__item-overlay"> </div>
+                        <div class="catalog__item-button_wrp">
+                            <button class="catalog__item-button" type="button">Add to Cart</button>
+                        </div>
+                    </div>
+                    <h3 class="catalog__item-title">
+                        ellery x&nbsp;m&rsquo;o capsule
+                    </h3>
+                    <p class="catalog__item-text">
+                        Known for her sculptural takes on&nbsp;traditional tailoring,
+                        Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda
+                        Operandi.
+                    </p>
+                    <p class="catalog__item-price">$52.00</p>
+                </li>
+            </ul>
+            <div class="center">
+                <div class="catalog__pagination">
+                    <a class="catalog__pagination-link" href="#">
+                        <img src="./img/pagination-arrow-left.svg" alt="arrow-left" width="8" height="14">
+                    </a>
+                    <a class="catalog__pagination-link active" href="#">1</a>
+                    <a class="catalog__pagination-link" href="#">2</a>
+                    <a class="catalog__pagination-link" href="#">3</a>
+                    <a class="catalog__pagination-link" href="#">4</a>
+                    <a class="catalog__pagination-link" href="#">5</a>
+                    <a class="catalog__pagination-link" href="#">6</a>
+                    <a class="catalog__pagination-link" href="#">...</a>
+                    <a class="catalog__pagination-link" href="#">20</a>
+                    <a class="catalog__pagination-link" href="#">
+                        <img src="./img/pagination-arrow-right.svg" alt="arrow-right" width="8" height="14">
+                    </a>
+                </div>
             </div>
         </section>
     </main>
@@ -286,6 +474,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
 </body>
