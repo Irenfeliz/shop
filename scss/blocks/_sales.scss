@@ -30,6 +30,7 @@
     &-link {
         display: block;
         text-decoration: none;
+        transition: transform 500ms;
     }
 
     &_woman {
@@ -95,4 +96,8 @@
 .sales__item-link:active .sales__item-title,
 .sales__item-link:active .sales__item-text {
     color: $active;
+}
+
+.sales__item-link:hover {
+    transform: scale(1.07);
 }

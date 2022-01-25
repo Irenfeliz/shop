@@ -137,6 +137,7 @@
     line-height: 17px;
     font-weight: normal;
     padding: 0;
+    transition: background 500ms;
 
     @include mobile {
         width: 95px;
@@ -144,8 +145,7 @@
 }
 
 .footer__subscribe-button:hover,
-.footer__subscribe-button:focus,
-.footer__subscribe-button:active {
+.footer__subscribe-button:focus {
     background: #E05C6E;
     outline: none;
 }
@@ -205,6 +205,7 @@
     &-icon {
         fill: $total-white;
         color: $total-black;
+        transition: fill 500ms, color 500ms;
     }
 }
 

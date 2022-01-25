@@ -48,6 +48,7 @@ body {
 .container {
     width: 71%;
     margin: 0 auto;
+    padding: 0;
 
     @include tablet {
         width: 95%;

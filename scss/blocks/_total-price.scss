@@ -10,8 +10,8 @@
     }
 
     @include mobile {
-        width: calc(100% - 80px);
-        margin: 0;
+        width: 100%;
+        margin: o;
         padding: 40px;
     }
 
@@ -46,10 +46,12 @@
         border: none;
         padding: 15px 40px;
         width: 100%;
+        transition: background 500ms, border-radius 500ms;
 
         &:hover,
         &:focus {
             background: #E05C6E;
+            border-radius: 10px;
             outline: none;
         }
 

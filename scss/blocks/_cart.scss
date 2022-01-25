@@ -164,6 +164,7 @@
         background-color: $total-white;
         border: 1px solid #A4A4A4;
         margin: 32px 0 0 0;
+        transition: background-color 500ms, color 500ms, border-radius 500ms, border 500ms;
 
         @include mobile {
             @include font(12px, 14px, 400);
@@ -189,9 +190,9 @@
         &:focus {
             background-color: $active;
             color: $total-white;
-            border: $active-light;
             border: 1px solid $active-light;
             outline: none;
+            border-radius: 10px;
         }
 
         &:active {

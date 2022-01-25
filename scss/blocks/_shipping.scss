@@ -61,6 +61,7 @@
             @include font(11px, 13px, 300);
             color: #4A4A4A;
             justify-content: left;
+            transition: background-color 500ms, color 500ms, border-radius 500ms, border 500ms;
 
             @include mobile {
                 text-transform: none;
@@ -77,8 +78,8 @@
             &:focus {
                 background-color: $active;
                 color: $total-white;
-                border: $active-light;
                 border: 1px solid $active-light;
+                border-radius: 10px;
                 outline: none;
             }
 
