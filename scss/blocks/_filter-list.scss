@@ -1,0 +1,28 @@
+.filter-list-btn {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #6F6E6E;
+    border-width: 0px 0px 1px 5px;
+    border-color: #ef5b70;
+    border-bottom-color: #EBEBEB;
+    margin: 16px 0 0;
+    background-color: transparent;
+    padding: 11px;
+}
+
+.filter-list-btn:hover {
+    color: #EF5B70;
+}
+
+.filter-list__items {
+    padding: 24px 34px 8px;
+}
+
+.filter-list__link {
+    text-decoration: none;
+    color: #6F6E6E;
+    margin: 0 0 11px;
+    display: inline-block;
+}

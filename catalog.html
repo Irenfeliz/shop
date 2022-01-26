@@ -140,14 +140,52 @@
         <section class="catalog container">
             <h2 class="visually-hidden">catalog</h2>
             <div class="catalog__menu">
-                <div class="catalog__filter">
-                    <h3>filter</h3>
-                </div>
+                <fieldset class="catalog__filter-wrp">
+                    <legend class="visually-hidden">filter</legend>
+                    <button class="catalog__filter-btn" type="button" id="filter">
+                        <span class="catalog__filter-btn_wrp">filter</span>
+                        <svg width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </button>
+                    <button class="catalog__filter-btn_mobile" type="button" id="filter-mobile">
+                        <svg width="37" height="25" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                        </svg>
+                    </button>
+                    <nav class="catalog__filter" id="list">
+                        <h3 class="visually-hidden">filter</h3>
+                        <ul class="catalog__filter-list">
+                            <li>
+                                <button class="filter-list-btn">category</button>
+                                <ul class="filter-list__items">
+                                    <li><a class="filter-list__link" href="#">Accessories</a></li>
+                                    <li><a class="filter-list__link" href="#">Bags</a></li>
+                                    <li><a class="filter-list__link" href="#">Denim</a></li>
+                                    <li><a class="filter-list__link" href="#">Hoodies & Sweatshirts</a></li>
+                                    <li><a class="filter-list__link" href="#">Jackets & Coats</a></li>
+                                    <li><a class="filter-list__link" href="#">Polos</a></li>
+                                    <li><a class="filter-list__link" href="#">Shirts</a></li>
+                                    <li><a class="filter-list__link" href="#">Shoes</a></li>
+                                    <li><a class="filter-list__link" href="#">Sweaters & Knits</a></li>
+                                    <li><a class="filter-list__link" href="#">T-Shirts</a></li>
+                                    <li><a class="filter-list__link" href="#">Tanks</a></li>
+                                </ul>
+                            </li>
+                            <li class="filter-list">
+                                <button class="filter-list-btn">brand</button>
+                            </li>
+                            <li class="filter-list"><button class="filter-list-btn">designer</button></li>
+                        </ul>
+                    </nav>
+                </fieldset>
                 <!-- bootstrap dropdowns - !change to checkbox!-->
-                <div class="catalog__dropdown">
-                    <h3 class="visually-hidden">dropdown</h3>
+                <fieldset class="catalog__dropdown">
+                    <legend class="visually-hidden">dropdown</legend>
                     <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             trending now
                         </button>
@@ -159,7 +197,7 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             size
                         </button>
@@ -172,7 +210,7 @@
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle" data-bs-toggle="dropdown"
+                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             price
                         </button>
@@ -187,10 +225,10 @@
                             <li><a class="dropdown-item" href="#">8</a></li>
                         </ul>
                     </div>
-                </div>
+                </fieldset>
             </div>
             <ul class="catalog__grid">
-                <li class="item-1 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-1.jpg" alt="product-1" />
                         <div class="catalog__item-overlay"> </div>
@@ -208,7 +246,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-2 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-2-2.jpg" alt="product-2" />
                         <div class="catalog__item-overlay"> </div>
@@ -226,7 +264,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-3 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-3.jpg" alt="product-3" />
                         <div class="catalog__item-overlay"> </div>
@@ -244,7 +282,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-4 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-4.jpg" alt="product-4" />
                         <div class="catalog__item-overlay"> </div>
@@ -262,7 +300,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-5 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-5-2.jpg" alt="product-5" />
                         <div class="catalog__item-overlay"> </div>
@@ -280,7 +318,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-6 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-6-2.jpg" alt="product-6" />
                         <div class="catalog__item-overlay"> </div>
@@ -298,7 +336,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-7 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-7.jpg" alt="product-7" />
                         <div class="catalog__item-overlay"> </div>
@@ -316,7 +354,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-8 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-8.jpg" alt="product-8" />
                         <div class="catalog__item-overlay"> </div>
@@ -334,7 +372,7 @@
                     </p>
                     <p class="catalog__item-price">$52.00</p>
                 </li>
-                <li class="item-9 catalog__item">
+                <li class="catalog__item">
                     <div class="catalog__item-wrp">
                         <img class="catalog__item-img" src="./img/product-9.jpg" alt="product-9" />
                         <div class="catalog__item-overlay"> </div>

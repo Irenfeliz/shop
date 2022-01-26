@@ -1,69 +1,110 @@
 .catalog__menu {
+    position: relative;
     margin: 51px 0 65px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-        'catalog__filter catalog__dropdown catalog__dropdown';
+    grid-gap: 30px;
 
     @include tablet {
         margin: 24px 0 40px;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            'catalog__filter catalog__dropdown';
         justify-content: space-between;
+        grid-gap: 16px;
     }
 
     @include mobile {
         margin: 24px 0 32px;
-        display: flex;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.catalog__filter-btn {
+    position: absolute;
+    padding: 0;
+    text-transform: uppercase;
+    @include font (14px, 16px, 600);
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    margin: 0 0 0 16px;
+    height: 44px;
+    width: fit-content;
+
+    @include mobile {
+        display: none;
+    }
+}
+
+.catalog__filter-btn_mobile {
+    display: none;
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    z-index: 3;
+    width: fit-content;
+
+    @include mobile {
+        display: block;
+        left: 10px;
+    }
+}
+
+.catalog__filter-btn_mobile:hover,
+.catalog__filter-btn_mobile:focus {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+
+.catalog__filter {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px #00000036;
+    padding: 29px 16px 16px;
+    z-index: 2;
+    grid-column: 1 / 2;
+
+    @include mobile {
+        top: -10px;
+        grid-column: 1 / 5;
+    }
+}
+
+.catalog__filter-display-block {
+    display: block;
+}
+
+.catalog__filter-btn_wrp {
+    margin: 0 11px 0 0;
+}
+
+.catalog__filter-btn:hover,
+.catalog__filter-btn:focus {
+    color: #EF5B70;
+    fill: #EF5B70;
+}
+
+.catalog__dropdown-btn {
+    @include mobile {
+        @include font (12px, 14px, 400);
+        padding: 0 12px 0 0;
     }
 }
 
 .catalog__dropdown {
-    text-align: right;
+    @include tablet {
+        text-align: right;
+    }
 
     @include mobile {
-        @include font (12px, 14px, 400)
-    }
-}
-
-.item-1 {
-    grid-area: item-1;
-}
-
-.item-2 {
-    grid-area: item-2;
-}
-
-.item-3 {
-    grid-area: item-3;
-}
-
-.item-4 {
-    grid-area: item-4;
-}
-
-.item-5 {
-    grid-area: item-5;
-}
-
-.item-6 {
-    grid-area: item-6;
-}
-
-.item-7 {
-    grid-area: item-7;
-}
-
-.item-8 {
-    grid-area: item-8;
-}
-
-.item-9 {
-    grid-area: item-9;
-
-    @include tablet {
-        display: none;
+        grid-column: 2 / 5;
+        text-align: left;
     }
 }
 
@@ -72,40 +113,29 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     grid-gap: 30px;
-    grid-template-areas:
-        'item-1 item-2 item-3'
-        'item-4 item-5 item-6'
-        'item-7 item-8 item-9';
 
     @include tablet {
         grid-gap: 16px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-template-areas:
-            'item-1 item-2'
-            'item-3 item-4'
-            'item-5 item-6'
-            'item-7 item-8';
     }
 
     @include mobile {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
-        grid-template-areas:
-            'item-1'
-            'item-2'
-            'item-3'
-            'item-4'
-            'item-5'
-            'item-6'
-            'item-7'
-            'item-8';
+    }
+}
+
+.catalog__item:last-child {
+    @include tablet {
+        display: none;
     }
 }
 
 .catalog__item {
     background-color: #f8f8f8;
 }
+
 
 .catalog__item-img {
     width: 100%;
@@ -202,8 +232,6 @@
     display: block;
 }
 
-
-
 .catalog__pagination {
     position: relative;
     width: 24%;
@@ -213,6 +241,15 @@
     text-align: center;
     padding: 11px 15px;
     margin: 48px auto 95px;
+
+    @include tablet {
+        width: 38%;
+        margin: 40px auto 63px;
+    }
+
+    @include mobile {
+        width: 80%;
+    }
 }
 
 .catalog__pagination-link {
