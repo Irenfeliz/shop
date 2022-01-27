@@ -119,6 +119,10 @@ button, input, ::placeholder {
   line-height: 29px;
 }
 
+.sprite {
+  display: none;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -316,7 +320,7 @@ table {
 }
 
 .header__menu-icon {
-  color: #E8E8E8;
+  fill: #E8E8E8;
   -webkit-transition: color 500ms;
   transition: color 500ms;
 }
@@ -1438,22 +1442,44 @@ table {
   margin-left: 7px;
 }
 
+.footer__social-networks-link {
+  height: 32px;
+  width: 32px;
+  background-color: #FFFFFF;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
 .footer__social-networks-icon {
-  fill: #FFFFFF;
-  color: #000000;
-  -webkit-transition: fill 500ms, color 500ms;
-  transition: fill 500ms, color 500ms;
+  fill: #000000;
+  -webkit-transition: fill 500ms;
+  transition: fill 500ms;
 }
 
 .footer__social-networks-link:focus {
   outline: none;
 }
 
+.footer__social-networks-link:hover,
+.footer__social-networks-link:focus,
+.footer__social-networks-link:active {
+  background-color: #f16d7f;
+}
+
 .footer__social-networks-link:hover .footer__social-networks-icon,
 .footer__social-networks-link:focus .footer__social-networks-icon,
 .footer__social-networks-link:active .footer__social-networks-icon {
-  fill: #f16d7f;
-  color: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .registration {
@@ -2155,7 +2181,7 @@ table {
 @media (max-width: 767px) {
   .total-price {
     width: 100%;
-    margin: o;
+    margin: 0;
     padding: 40px;
   }
 }
