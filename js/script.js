@@ -9,11 +9,11 @@ button.addEventListener("click", function () {
 let filter = document.getElementById("filter");
 let list = document.getElementById("list");
 filter.addEventListener("click", function () {
-  list.classList.toggle("catalog__filter-display-block");
+  list.classList.toggle("filter-display-block");
 });
 
 let filterMobile = document.getElementById("filter-mobile");
 let listMobile = document.getElementById("list");
 filterMobile.addEventListener("click", function () {
-  listMobile.classList.toggle("catalog__filter-display-block");
+  listMobile.classList.toggle("filter-display-block");
 });

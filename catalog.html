@@ -126,22 +126,22 @@
         <section class="catalog container">
             <h2 class="visually-hidden">catalog</h2>
             <div class="catalog__menu">
-                <fieldset class="catalog__filter-wrp">
+                <fieldset>
                     <legend class="visually-hidden">filter</legend>
-                    <button class="catalog__filter-btn" type="button" id="filter">
-                        <span class="catalog__filter-btn_wrp">filter</span>
+                    <button class="filter-btn" type="button" id="filter">
+                        <span class="filter-btn_wrp">filter</span>
                         <svg width="15" height="10">
                             <use xlink:href="img/sprite.svg#filter-button"></use>
                         </svg>
                     </button>
-                    <button class="catalog__filter-btn_mobile" type="button" id="filter-mobile">
+                    <button class="filter-btn_mobile" type="button" id="filter-mobile">
                         <svg width="37" height="25">
                             <use xlink:href="img/sprite.svg#filter-button"></use>
                         </svg>
                     </button>
-                    <nav class="catalog__filter" id="list">
+                    <nav class="catalog__filter filter" id="list">
                         <h3 class="visually-hidden">filter</h3>
-                        <ul class="catalog__filter-list">
+                        <ul class="filter-list">
                             <li>
                                 <button class="filter-list-btn">category</button>
                                 <ul class="filter-list__items">
@@ -165,56 +165,132 @@
                         </ul>
                     </nav>
                 </fieldset>
-                <!-- bootstrap dropdowns - !change to checkbox!-->
                 <fieldset class="catalog__dropdown">
                     <legend class="visually-hidden">dropdown</legend>
-                    <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            trending now
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">red</a></li>
-                            <li><a class="dropdown-item" href="#">blue</a></li>
-                            <li><a class="dropdown-item" href="#">black</a></li>
-                            <li><a class="dropdown-item" href="#">white</a></li>
-                        </ul>
+                    <div class="catalog__dropdown-group">
+                        <h3 class="visually-hidden">trending now</h3>
+                        <div class="catalog__dropdown-btn">
+                            <input class="catalog__dropdown-input" type="checkbox" id="trend">
+                            <label for="trend">trending now
+                                <svg class="catalog__dropdown-shevron" width="11" height="6">
+                                    <use xlink:href="img/sprite.svg#shevron-down"></use>
+                                </svg>
+                            </label>
+                            <form action="#" class="catalog__dropdown-menu">
+                                <ul class="catalog__dropdown-items">
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="trend1" name="trend1" value="trend">
+                                        <label for="trend1">red</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="trend2" name="trend2" value="trend">
+                                        <label for="trend2">blue</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="trend3" name="trend3" value="trend">
+                                        <label for="trend3">white</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="trend4" name="trend4" value="trend">
+                                        <label for="trend4">red</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="trend5" name="trend5" value="trend">
+                                        <label for="trend5">dark gray</label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            size
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">xs</a></li>
-                            <li><a class="dropdown-item" href="#">s</a></li>
-                            <li><a class="dropdown-item" href="#">m</a></li>
-                            <li><a class="dropdown-item" href="#">l</a></li>
-                            <li><a class="dropdown-item" href="#">xl</a></li>
-                        </ul>
+                    <div class="catalog__dropdown-group">
+                        <h3 class="visually-hidden">size</h3>
+                        <div class="catalog__dropdown-btn">
+                            <input class="catalog__dropdown-input" type="checkbox" id="size">
+                            <label for="size">size
+                                <svg class="catalog__dropdown-shevron" width="11" height="6">
+                                    <use xlink:href="img/sprite.svg#shevron-down"></use>
+                                </svg>
+                            </label>
+                            <form action="#" class="catalog__dropdown-menu">
+                                <ul class="catalog__dropdown-items">
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="sizexs" name="sizexs" value="size">
+                                        <label for="sizexs">xs</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="sizes" name="sizes" value="size">
+                                        <label for="sizes">s</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="sizem" name="sizem" value="size">
+                                        <label for="sizem">m</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="sizel" name="sizel" value="size">
+                                        <label for="sizel">l</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="sizexl" name="sizexl" value="size">
+                                        <label for="sizexl">xl</label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn dropdown-button dropdown-toggle catalog__dropdown-btn"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            price
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">2</a></li>
-                            <li><a class="dropdown-item" href="#">3</a></li>
-                            <li><a class="dropdown-item" href="#">4</a></li>
-                            <li><a class="dropdown-item" href="#">5</a></li>
-                            <li><a class="dropdown-item" href="#">6</a></li>
-                            <li><a class="dropdown-item" href="#">7</a></li>
-                            <li><a class="dropdown-item" href="#">8</a></li>
-                        </ul>
+                    <div class="catalog__dropdown-group">
+                        <h3 class="visually-hidden">price</h3>
+                        <div class="catalog__dropdown-btn">
+                            <input class="catalog__dropdown-input" type="checkbox" id="price">
+                            <label for="price">price
+                                <svg class="catalog__dropdown-shevron" width="11" height="6">
+                                    <use xlink:href="img/sprite.svg#shevron-down"></use>
+                                </svg>
+                            </label>
+                            <form action="#" class="catalog__dropdown-menu">
+                                <ul class="catalog__dropdown-items">
+                                    <li class="catalog__dropdown-item">
+                                        <input class="catalog__dropdown-item" type="checkbox" id="price1" name="price1"
+                                            value="price">
+                                        <label for="price1">0-10$</label></label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price2" name="price2" value="price">
+                                        <label for="price2">10-50$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price3" name="price3" value="price">
+                                        <label for="price3">50-100$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price4" name="price4" value="price">
+                                        <label for="price4">100-150$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price5" name="price5" value="price">
+                                        <label for="price5">150-200$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price6" name="price6" value="price">
+                                        <label for="price6">200-250$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price7" name="price7" value="price">
+                                        <label for="price7">250-300$</label>
+                                    </li>
+                                    <li class="catalog__dropdown-item">
+                                        <input type="checkbox" id="price8" name="price8" value="price">
+                                        <label for="price8">>300$</label>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                     </div>
                 </fieldset>
             </div>
             <ul class="catalog__grid">
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-1.jpg" alt="product-1" />
+                        <img class="catalog__item-img" src="./img/product-1.jpg" alt="product-1" width="360" height="420" />
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -232,7 +308,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-2-2.jpg" alt="product-2" />
+                        <img class="catalog__item-img" src="./img/product-2-2.jpg" alt="product-2"  width="360" height="420"  />
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -250,7 +326,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-3.jpg" alt="product-3" />
+                        <img class="catalog__item-img" src="./img/product-3.jpg" alt="product-3"  width="360" height="420" />
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -268,7 +344,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-4.jpg" alt="product-4" />
+                        <img class="catalog__item-img" src="./img/product-4.jpg" alt="product-4"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -286,7 +362,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-5-2.jpg" alt="product-5" />
+                        <img class="catalog__item-img" src="./img/product-5-2.jpg" alt="product-5"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -304,7 +380,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-6-2.jpg" alt="product-6" />
+                        <img class="catalog__item-img" src="./img/product-6-2.jpg" alt="product-6"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -322,7 +398,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-7.jpg" alt="product-7" />
+                        <img class="catalog__item-img" src="./img/product-7.jpg" alt="product-7"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -340,7 +416,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-8.jpg" alt="product-8" />
+                        <img class="catalog__item-img" src="./img/product-8.jpg" alt="product-8"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -358,7 +434,7 @@
                 </li>
                 <li class="catalog__item">
                     <div class="catalog__item-wrp">
-                        <img class="catalog__item-img" src="./img/product-9.jpg" alt="product-9" />
+                        <img class="catalog__item-img" src="./img/product-9.jpg" alt="product-9"  width="360" height="420"/>
                         <div class="catalog__item-overlay"> </div>
                         <div class="catalog__item-button_wrp">
                             <button class="catalog__item-button" type="button">Add to&nbsp;Cart</button>
@@ -396,74 +472,75 @@
         </section>
     </main>
 
-  <footer class="footer">
-    <div class="footer__subscribe">
-      <div class="footer__subscribe-wrp container">
-        <div class="footer__subscribe-creator">
-          <img class="footer__subscribe-img" src="./img/creator.png" alt="creator" width="96" height="96" />
-          <blockquote class="footer__subscribe-quote">
-            &laquo;Vestibulum quis porttitor dui! Quisque viverra
-            nunc&nbsp;mi,
-            <span class="footer__subscribe-quote_italics">
-              a&nbsp;pulvinar purus condimentum&raquo;</span>
-          </blockquote>
+    <footer class="footer">
+        <div class="footer__subscribe">
+            <div class="footer__subscribe-wrp container">
+                <div class="footer__subscribe-creator">
+                    <img class="footer__subscribe-img" src="./img/creator.png" alt="creator" width="96" height="96" />
+                    <blockquote class="footer__subscribe-quote">
+                        &laquo;Vestibulum quis porttitor dui! Quisque viverra
+                        nunc&nbsp;mi,
+                        <span class="footer__subscribe-quote_italics">
+                            a&nbsp;pulvinar purus condimentum&raquo;</span>
+                    </blockquote>
+                </div>
+                <form class="footer__subscribe-form" action="#">
+                    <h2 class="footer__subscribe-title">
+                        <span class="footer__subscribe-title_bold"> subscribe </span> for
+                        our newletter and promotion
+                    </h2>
+                    <div class="footer__subscribe-form_wrp">
+                        <input class="footer__subscribe-input" id="subscribe-email" type="email"
+                            placeholder="Enter Your Email" />
+                        <label class="visually-hidden" for="subscribe-email">subscribe</label>
+                        <button class="footer__subscribe-button" type="submit">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <form class="footer__subscribe-form" action="#">
-          <h2 class="footer__subscribe-title">
-            <span class="footer__subscribe-title_bold"> subscribe </span> for
-            our newletter and promotion
-          </h2>
-          <div class="footer__subscribe-form_wrp">
-            <input class="footer__subscribe-input" id="subscribe-email" type="email" placeholder="Enter Your Email" />
-            <label class="visually-hidden" for="subscribe-email">subscribe</label>
-            <button class="footer__subscribe-button" type="submit">
-              Subscribe
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom-wrp container">
-        <p class="footer__rights">
-          &copy;&nbsp;2021 Brand All Rights Reserved.
-        </p>
-        <div class="footer__social-networks">
-          <h2 class="visually-hidden">
-            social networks
-          </h2>
-          <ul class="footer__social-networks-list">
-            <li class="footer__social-networks-item">
-              <a class="footer__social-networks-link" href="https://www.facebook.com/" target="_blank">
-                <svg class="footer__social-networks-icon" width="9" height="15">
-                  <use xlink:href="img/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-networks-item">
-              <a class="footer__social-networks-link" href="https://www.instagram.com/" target="_blank">
-                <svg class="footer__social-networks-icon" width="16" height="15">
-                  <use xlink:href="img/sprite.svg#instagram"></use>
-                </svg></a>
-            </li>
-            <li class="footer__social-networks-item">
-              <a class="footer__social-networks-link" href="https://www.pinterest.ru/" target="_blank">
-                <svg class="footer__social-networks-icon" width="13" height="16">
-                  <use xlink:href="img/sprite.svg#pinterest"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social-networks-item">
-              <a class="footer__social-networks-link" href="https://twitter.com/?lang=ru" target="_blank">
-                <svg class="footer__social-networks-icon" width="17" height="14">
-                  <use xlink:href="img/sprite.svg#twitter"></use>
-                </svg></a>
-            </li>
-          </ul>
+        <div class="footer__bottom">
+            <div class="footer__bottom-wrp container">
+                <p class="footer__rights">
+                    &copy;&nbsp;2021 Brand All Rights Reserved.
+                </p>
+                <div class="footer__social-networks">
+                    <h2 class="visually-hidden">
+                        social networks
+                    </h2>
+                    <ul class="footer__social-networks-list">
+                        <li class="footer__social-networks-item">
+                            <a class="footer__social-networks-link" href="https://www.facebook.com/" target="_blank">
+                                <svg class="footer__social-networks-icon" width="9" height="15">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-networks-item">
+                            <a class="footer__social-networks-link" href="https://www.instagram.com/" target="_blank">
+                                <svg class="footer__social-networks-icon" width="16" height="15">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg></a>
+                        </li>
+                        <li class="footer__social-networks-item">
+                            <a class="footer__social-networks-link" href="https://www.pinterest.ru/" target="_blank">
+                                <svg class="footer__social-networks-icon" width="13" height="16">
+                                    <use xlink:href="img/sprite.svg#pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-networks-item">
+                            <a class="footer__social-networks-link" href="https://twitter.com/?lang=ru" target="_blank">
+                                <svg class="footer__social-networks-icon" width="17" height="14">
+                                    <use xlink:href="img/sprite.svg#twitter"></use>
+                                </svg></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
