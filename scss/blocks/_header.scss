@@ -44,7 +44,7 @@
 
 .header__menu-icon {
     fill: #E8E8E8;
-    transition: color 500ms;
+    transition: fill 500ms;
 }
 
 .header__search {
@@ -141,12 +141,12 @@
 .header__link:hover .header__menu-icon,
 .header__menu-btn:focus .header__menu-icon,
 .header__menu-btn:hover .header__menu-icon {
-    color: $hover;
+    fill: $hover;
 }
 
 .header__link:active .header__menu-icon,
 .header__menu-btn:active .header__menu-icon {
-    color: $active;
+    fill: $active;
 }
 
 .header__nav {

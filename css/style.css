@@ -321,8 +321,8 @@ table {
 
 .header__menu-icon {
   fill: #E8E8E8;
-  -webkit-transition: color 500ms;
-  transition: color 500ms;
+  -webkit-transition: fill 500ms;
+  transition: fill 500ms;
 }
 
 .header__search {
@@ -437,12 +437,12 @@ table {
 .header__link:hover .header__menu-icon,
 .header__menu-btn:focus .header__menu-icon,
 .header__menu-btn:hover .header__menu-icon {
-  color: #cc5868;
+  fill: #cc5868;
 }
 
 .header__link:active .header__menu-icon,
 .header__menu-btn:active .header__menu-icon {
-  color: #5c5a5a65;
+  fill: #5c5a5a65;
 }
 
 .header__nav {
