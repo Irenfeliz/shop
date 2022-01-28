@@ -40,19 +40,26 @@
         margin: 0 0 40px;
         filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 
+        @include tablet {
+            justify-content: center;
+        }
+
         @include mobile {
             margin: 0 0 32px;
         }
 
         &-img {
+            object-fit: cover;
             width: 40%;
 
             @include tablet {
                 width: 35%;
+                height: 100%;
             }
 
             @include mobile {
                 width: 40%;
+                height: 100%;
             }
         }
 
@@ -60,14 +67,12 @@
             position: relative;
             padding: 22px 0 0 31px;
             background-color: $total-white;
-            width: 60%;
 
             @include tablet {
                 width: 65%;
             }
 
             @include mobile {
-                width: 60%;
                 padding: 14px 24px 38px 17px;
             }
         }

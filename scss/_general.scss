@@ -96,3 +96,7 @@ button, input, ::placeholder {
 .page-title {
     @include page-title
 }
+
+.sprite {
+    display: none;
+}
